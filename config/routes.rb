@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   resources :uploads
   root to: 'uploads#index'
+  post '/matched_uploads', to: 'uploads#matched_uploads'
 end

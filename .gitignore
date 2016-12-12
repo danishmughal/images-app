@@ -18,3 +18,5 @@
 
 # Ignore .env vars
 .env
+/temp-images/*
+.DS_Store

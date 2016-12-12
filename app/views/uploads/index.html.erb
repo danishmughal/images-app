@@ -1,8 +1,25 @@
 <h1>All Uploads</h1>
 
+<h2>Test your image</h2>
+<%= form_tag "/matched_uploads", method: :post do |f| %>
+  <div>
+    <%= text_field_tag :name %>
+  </div>
+  <div>
+    <%= submit_tag %>
+  </div>
+<% end %>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 <% @uploads.each do |upload| %>
   <%= link_to upload do %>
-  <img src="<%= upload.name.square %>">
+  <img src="<%= upload.name.thumb %>">
   <% end %>
 <% end %>
 

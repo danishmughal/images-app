@@ -28,8 +28,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'carrierwave', '0.10.0'
-gem "mini_magick"
-gem "fog"
+gem 'mini_magick'
+gem 'fog'
+
+gem 'phashion'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -40,6 +42,7 @@ group :development, :test do
   gem 'dotenv-rails'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'awesome_print'
 end
 
 group :development do

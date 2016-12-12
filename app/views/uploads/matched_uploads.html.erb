@@ -1,0 +1,9 @@
+<h1>Matching images</h1>
+
+
+<% @uploads.each do |upload| %>
+  <%= link_to upload do %>
+    <img src="<%= upload.name.thumb %>">
+  <% end %>
+  <%= (upload.fingerprint.to_i(16) ^ @phash_image.fingerprint).to_s(2).count("1") %>
+<% end %>
